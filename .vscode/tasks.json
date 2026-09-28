@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build and run JAVIER_PE_01",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"JAVIER_PE_01.cpp",
+				"-o",
+				"JAVIER_PE_01.exe",
+				"-lfreeglut",
+				"-lopengl32",
+				"-lglu32",
+				"&&",
+				"JAVIER_PE_01.exe"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}
